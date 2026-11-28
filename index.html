@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- shrink-to-fit=no: iPad Safari (desktop mode, its default) otherwise re-lays the page out up to 1280 px wide and
+     scales it down whenever content pokes out at load or on rotation, which in portrait makes the whole site too wide -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<meta name="ga" content="G-2DZPKED92R">
+<title>Family tree</title>
+<script>try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+<link rel="stylesheet" href="style.css?v=497b8840b9">
+</head>
+<body>
+<header id="bar" hidden>
+  <a href="#" class="home">Family tree</a>
+  <a href="#" class="homebtn" id="homebtn">Home</a>
+  <div class="find">
+    <input id="q" type="search" placeholder="Find a person" autocomplete="off" aria-label="Find a person">
+    <ul id="hits" hidden></ul>
+  </div>
+  <a href="#az" class="azlink">Everyone</a>
+  <a href="#changelog" class="azlink">Changelog</a></header>
+<main id="main">
+  <p id="opening" class="opening">Opening the family tree…</p>
+  <form id="login" class="login" hidden>
+    <h1>Family tree</h1>
+    <p>Open the link you were sent, or enter the family password.</p>
+    <input id="pw" type="password" autocomplete="current-password" placeholder="Password" required>
+    <label class="rem"><input id="remember" type="checkbox" checked> Remember on this device</label>
+    <button type="submit">Open</button>
+    <p id="msg" class="msg" aria-live="polite"></p>
+  </form>
+  <div id="view" hidden></div>
+</main>
+<footer class="foot">
+  <button id="lock" type="button" title="Forget the password on this device" hidden>Forget this device</button>
+  <button id="themebtn" type="button" title="Switch between light, dark and automatic (follows this device)"></button>
+</footer>
+<script src="chart.js?v=f321d1b64c"></script>
+<script src="app.js?v=3e46e94e35"></script>
+<script src="theme.js?v=d4062e2704"></script>
+<script src="ask.js?v=e3e88d80b1"></script>
+</body>
+</html>
